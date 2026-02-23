@@ -1,0 +1,30 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-id="1106" group-title="Hotstar" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSXLd41E9MqbeJL6ShT7R1MoGOngO3QsR2nA&s",Hotstar-Tamil
+#EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar(Android/15)
+#EXTVLCOPT:http-origin=https://www.hotstar.com
+#EXTVLCOPT:http-referrer=https://www.hotstar.com
+https://c2ag.short.gy/n/tamil.m3u8
+
+#EXTINF:-1 tvg-id="1106" group-title="Hotstar" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSXLd41E9MqbeJL6ShT7R1MoGOngO3QsR2nA&s",Hotstar-Hindi
+#EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar(Android/15)
+#EXTVLCOPT:http-origin=https://www.hotstar.com
+#EXTVLCOPT:http-referrer=https://www.hotstar.com
+https://c2ag.short.gy/n/hin.m3u8
+
+#EXTINF:-1 tvg-id="1106" group-title="Hotstar" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSXLd41E9MqbeJL6ShT7R1MoGOngO3QsR2nA&s",Hotstar-Malayalam
+#EXTVLCOPT:http-origin=https://www.hotstar.com
+#EXTVLCOPT:http-referrer=https://www.hotstar.com
+https://c2ag.short.gy/n/mal.m3u8
+
+#EXTINF:-1 tvg-id="1106" group-title="Hotstar" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSXLd41E9MqbeJL6ShT7R1MoGOngO3QsR2nA&s",Hotstar-Telugu
+#EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar(Android/15)
+#EXTVLCOPT:http-origin=https://www.hotstar.com
+#EXTVLCOPT:http-referrer=https://www.hotstar.com
+https://c2ag.short.gy/n/telugu.m3u8
+
+#EXTINF:-1 tvg-id="1106" group-title="Hotstar" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSXLd41E9MqbeJL6ShT7R1MoGOngO3QsR2nA&s",Hotstar-Kannada
+#EXTVLCOPT:http-user-agent=Hotstar;in.startv.hotstar(Android/15)
+#EXTVLCOPT:http-origin=https://www.hotstar.com
+#EXTVLCOPT:http-referrer=https://www.hotstar.com
+https://c2ag.short.gy/n/kan.m3u8
