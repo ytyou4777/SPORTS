@@ -40,7 +40,7 @@ async function processM3U() {
         // Regex to find group-title="..." and replace it
         const modifiedLine = line.replace(/group-title="([^"]*)"/, (match, group) => {
           // Prepend "Clarity TV | " to the existing group name
-          return `group-title="Clarity TV | JIOTV+ ${group}"`;
+          return `group-title="Clarity TV | JIOTV+ | ${group}"`;
         });
         outputLines.push(modifiedLine);
       } else {
