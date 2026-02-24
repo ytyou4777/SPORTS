@@ -1,0 +1,40 @@
+name: Update JioTV Playlist
+
+on:
+  schedule:
+    # Runs every 10 minutes
+    - cron: '*/10 * * * *'
+  workflow_dispatch:          # allows manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch latest stream data
+        run: |
+          echo "Fetching data from https://jtv.pfy.workers.dev ..."
+          curl -sSL "https://jtv.pfy.workers.dev" -o stream_data.json
+          echo "Download complete."
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Update playlist
+        run: python .github/scripts/update_playlist.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add your_playlist.m3u   # 👈 change to your actual playlist filename
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Automated playlist update $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+            git push
+          fi
