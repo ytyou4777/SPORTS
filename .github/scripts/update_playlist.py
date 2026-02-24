@@ -3,7 +3,7 @@ import re
 import sys
 
 PLAYLIST_FILE = "playlist.m3u"   # 👈 change to your actual filename
-JSON_FILE = "stream_data.json"
+JSON_FILE = "https://jtv.pfy.workers.dev"
 
 def clean_channel_name(name):
     """Normalize channel name for matching (lowercase, remove ' hd')."""
