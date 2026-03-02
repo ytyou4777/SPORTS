@@ -1,7 +1,7 @@
 const axios = require('axios');
 const fs = require('fs');
 
-const SOURCE_URL = 'https://raw.githubusercontent.com/cloudplay97/m3u/main/jiotv-mb.m3u';
+const SOURCE_URL = 'https://raw.githubusercontent.com/cloudplay97/m3u/main/jtv-bpk.m3u';
 const OUTPUT_FILE = 'JIO.m3u';
 
 async function processM3U() {
